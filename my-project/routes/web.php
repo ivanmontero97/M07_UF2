@@ -22,7 +22,7 @@ Route::get('/sign/signin/{iniciar}/{sesion}/{de}/{usuari}',[SignController::clas
 
 Route::get('/sign/signup/{creacion}/{usuario}/{nuevo}', [SignController::class, 'signUp']);
 
-Route::post('/login', [SignController::class, 'checkEmail'])->middleware('checkP2');
+Route::post('/login', [ControllerP2::class, 'checkEmail'])->middleware('checkP2');
 
-Route::get('/error', [SignController::class, 'checkError'])->name('errorAcces.index');
+Route::get('/error', [ControllerP2::class, 'checkError'])->name('errorAcces.index');
 
