@@ -14,4 +14,5 @@ class SignController extends Controller
         $signUpVar =  $creacion . " " . $usuario . " " . $nuevo ;
     return view('signUp')->with('signUpVar',$signUpVar);
     }
+
 }

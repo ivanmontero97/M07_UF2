@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SignController;
+use App\Http\Controllers\ControllerP2;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,4 +21,8 @@ Route::get('/', function () {
 Route::get('/sign/signin/{iniciar}/{sesion}/{de}/{usuari}',[SignController::class, 'signIn']);
 
 Route::get('/sign/signup/{creacion}/{usuario}/{nuevo}', [SignController::class, 'signUp']);
+
+Route::post('/login', [SignController::class, 'checkEmail'])->middleware('checkP2');
+
+Route::get('/error', [SignController::class, 'checkError'])->name('errorAcces.index');
 
