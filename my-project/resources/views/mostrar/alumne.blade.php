@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Hola eres un alumne. Este es tu {{$email}}<h1>
+<h1>Hola eres un alumne. Este es tu {{ $email }}<h1>
+<a href="{{ route('name_login') }}">Volver al inicio de sesión</a>
 </body>
 </html>

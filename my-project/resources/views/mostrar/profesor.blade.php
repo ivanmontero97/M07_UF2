@@ -7,5 +7,6 @@
 </head>
 <body>
 <h1>Hola eres un profesor. Este es tu {{$email}}<h1> 
+<a href="{{ route('name_login') }}">Volver al inicio de sesión</a>
 </body>
 </html>

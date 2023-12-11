@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SignController;
 use App\Http\Controllers\ControllerP2;
+use App\Http\Controllers\ControladorP3;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +23,18 @@ Route::get('/sign/signin/{iniciar}/{sesion}/{de}/{usuari}',[SignController::clas
 
 Route::get('/sign/signup/{creacion}/{usuario}/{nuevo}', [SignController::class, 'signUp']);
 
+//Este también se usa en la P3
 Route::post('/login', [ControllerP2::class, 'checkEmail'])->middleware('checkP2');
 
 Route::get('/error', [ControllerP2::class, 'checkError'])->name('errorAcces.index');
 
+//Practica 3 - Ruta-Controllers
+Route::get('/login', function(){
+    return view('login');
+})-> name('name_login');
+
+Route::get('crearUsuario',function(){
+    return view('crearUsuario');
+})->name('name_crearUsuario');
+
+Route::post('/mostrarUsuario', [ControladorP3::class , 'userData']);
