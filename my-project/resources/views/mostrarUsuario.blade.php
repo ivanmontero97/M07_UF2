@@ -6,14 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Datos de Usuario</h1>
-    <ul>
-        <li>User id : {{$userId}}</li>
-        <li>Nombre : {{$name}}</li>
-        <li>Apellido : {{$surname}}</li>
-        <li>Email : {{$email}}</li>
-        <li>Rol : {{$rol}}</li>
-    </ul>
+    <h1>La inserción de datos ha sido correcta</h1>
     <a href = "{{ route('name_crearUsuario') }}">  <b>Crear otro usuario</b> </a>
 
 </body>

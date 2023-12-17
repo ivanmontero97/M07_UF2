@@ -6,11 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<form method="POST" action="/mostrarUsuario">
-<div>
-    <label>User_id</label>
-    <input type="number" name="user_id" placeholder="0" >
-</div>
+<form method="POST" action="/crearUsuario">
 <div>
     <label>Nombre :</label>
     <input type="text" name="name" placeholder="Juan" >
@@ -30,11 +26,14 @@
 <div>
     <p>Elige un rol</p>
         <div id="mensaje-error-rol" style="color:red"></div>
-        <input type="radio" id="adminCheckbox" name="rol" value="alumnat">
+        <input type="radio" id="adminCheckbox" name="rol" value="estudiant">
         <label for="adminCheckbox">alumnat</label>
 
-        <input type="radio" id="usuarioCheckbox" name="rol" value="professorat">
+        <input type="radio" id="usuarioCheckbox" name="rol" value="professor">
         <label for="usuarioCheckbox">Professorat</label>
+
+        <input type="radio" id="adminCheckbox" name="rol" value="centre">
+        <label for="adminCheckbox">centre</label>
 </div>
 <div>
     <p>Elige un estado</p>
