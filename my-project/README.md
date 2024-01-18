@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -63,4 +63,49 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).  -->
+
+
+# PRACTICA 5 - LARAVEL CRUD
+
+## FUNCIONALITATS DE LA PRÀCTICA
+
+1. **Login de l'aplicació**
+   - Si l'usuari és administrador del centre (4,5 punts), s'ha de redirigir a la pantalla de l'administrador.
+   - Mostrarà un missatge de benvinguda.
+
+2. **Visualització de Professors**
+   - Mostrarà per defecte tots els usuaris de les BBDD que siguin professors.
+   - Per cada professor amb dades a les BBDD:
+     - Nom
+     - Cognom
+     - Correu
+     - Estat (actiu o inactiu) mitjançant una taula.
+     - Botó per modificar els valors.
+
+3. **Modificació de Professor**
+   - Redirigirà a una pantalla amb un formulari que carregarà els valors del professor.
+   - Després de guardar els canvis, tornarà automàticament a la pàgina d'inici amb la llista actualitzada.
+
+4. **Eliminació de Professor**
+   - Cada registre tindrà un botó per eliminar.
+   - Després de l'eliminació, mostrarà la llista de professors actualitzada.
+
+5. **Gestió sense Registres**
+   - Si no hi ha professors a la BBDD, mostrarà un missatge que digui "No hi ha professors".
+
+6. **Afegir Professor**
+   - Sempre visible a la part inferior hi haurà un botó per afegir un professor.
+   - Redirigirà a una pantalla amb un formulari i un botó per guardar la informació.
+
+7. **Usuari Professor del Centre**
+   - Realitzarà el mateix procés que l'administrador per gestionar els usuaris alumnes.
+
+8. **Usuari Alumne**
+   - Puntuació: 1 punt
+   - Podrà afegir un document i mostrar l'enllaç per pantalla.
+
+## RECORDEU QUE:
+- Crear utilitzarà el mètode POST.
+- Editar utilitzarà el mètode PUT.
+- Borrar utilitzarà el mètode DELETE.

@@ -15,7 +15,7 @@ class checkEmailPassword
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if($request -> email =='' || $request -> password == ''){
+        if($request -> email == '' || $request -> password == ''){
             return to_route('errorAcces.index');
         }
         else{

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Usuari extends Model
 {
     use HasFactory;
+    
     protected $table = 'usuaris';
 
     protected $filleable = [

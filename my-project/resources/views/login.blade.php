@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<form id="formulario-login" method="POST" action="/login">
+<form id="formulario-login" method="POST" action="{{ route('validateSignIn') }}"> <!-- Ojo , estamos asociando el action al name de la ruta definido en lugar de a la URI !-->
         <div>
             <label>Introduce el <b>email</b></b></label>
 

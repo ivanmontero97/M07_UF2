@@ -6,18 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-<form method="POST" action="{{ route('postSignUp') }}">
+    
+<form method="POST" action="/alumno/{{$alumn->id}}">
+@method('put')
+@csrf
+
+<h1>Editar valores de alumno :</h1>
 <div>
     <label>Nombre :</label>
-    <input type="text" name="name" placeholder="Juan" >
+    <input type="text" name="name" placeholder="Juan" value="{{$alumn->nom}}" >
 </div>
 <div>
     <label>Apellidos :</label>
-    <input type="text" name="surname" placeholder="Lopez" >
+    <input type="text" name="surname" placeholder="Lopez" value="{{$alumn->cognom}}">
 </div>
 <div>
     <label>Email : </label>
-    <input type="text" name="email" placeholder="prueba@correo.es" >
+    <input type="text" name="email" placeholder="prueba@correo.es" value="{{$alumn->email}}" >
 </div>
 <div>
     <label>Contraseña </label>
@@ -38,7 +43,7 @@
 <div>
     <p>Elige un estado</p>
     <div id="mensaje-error-active" style="color:red"></div>
-    <input type="radio" id="activadoCheckbox" name="active" value="0">
+    <input type="radio" id="activadoCheckbox" name="active" value="0" >
     <label for="activadoCheckbox">Activado</label>
 
     <input type="radio" id="Desactivado" name="active" value="1">
@@ -46,9 +51,5 @@
 </div>
 <input type="submit" value="Enviar">
    </form>
-   <br>
-   <p> ¿Ya tienes una cuenta creada ?</p>
-   <a id="volver-login" href="{{ route('name_login') }}"><b>Iniciar sesión</b></a>
-
 </body>
 </html>
